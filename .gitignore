@@ -27,3 +27,4 @@ src/Theta_*.value
 
 # vim stuff
 *.swp
+.Rproj.user
