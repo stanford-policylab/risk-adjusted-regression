@@ -1,6 +1,6 @@
 # Risk adjusted regression
 
-Analysis of disparate impact using risk adjusted regressions (See [Jung et al. 2018](https://arxiv.org/abs/1809.05651))
+Analysis of disparate impact using risk adjusted regressions (See [Jung et al., 2018](https://arxiv.org/abs/1809.05651))
 
 ## Quick-start guide
 
