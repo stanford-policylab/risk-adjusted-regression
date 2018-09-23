@@ -40,7 +40,7 @@ Most common options would be:
 RISKMODEL  # The model used to estimate risk/treatment (e.g., l1, gbm, rf)
 
 # Limits---lowerbound (`LB`) and upperbounds (`UB`)---of exp(delta) for sensitivity
-# e.g., exp(delta) = 3 means u can double the odds
+# e.g., exp(delta) = 3 means u can triple the odds
 EXP_DELTA_LB
 EXP_DELTA_UB
 
