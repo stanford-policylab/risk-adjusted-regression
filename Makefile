@@ -70,7 +70,7 @@ figures=$(addsuffix .pdf, \
 	)
 
 # High-level build targets ---------------------------------------------------
-all: $(figures)
+all: summary.log $(figures)
 .PHONY: all
 
 clean:
@@ -160,6 +160,11 @@ $(DATA_DIR)/$(TARGET)/results_%_$(RISKMODEL)_s$(RSEED).rds: \
 	$(BS_RDS) \
 	$(POLICY_RDS)
 	cd src && ./31-secondstage.R $(RFLAGS) -l $*
+
+summary.log: \
+	summary.R \
+	$(POLICY_RDS)
+	cd src && ./summary.R $(RFLAGS) > ../summary.log
 
 Fig1.pdf: \
 	plot.R \

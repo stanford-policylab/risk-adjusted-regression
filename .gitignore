@@ -14,6 +14,7 @@ src/*.rds
 Rplots.pdf
 fig/*
 src/Theta_*.value
+summary.log
 
 # RStudio files
 .Rproj.user/

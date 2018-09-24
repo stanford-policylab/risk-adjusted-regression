@@ -9,25 +9,33 @@ Use `make` to download the data and reproduce _all_ results reported in the [pap
 ```sh
 $ make
 # Will produce files
-#   fig
-#   |-- Fig1.pdf
-#   |-- Fig2.pdf
-#   |-- Fig3.pdf
-#   |-- Fig4.pdf
-#   |-- Fig5.pdf
-#   |-- FigA1a.pdf
-#   |-- FigA1b.pdf
-#   |-- FigA1c.pdf
-#   `-- FigA1d.pdf
+#  |-- fig
+#  |   |-- Fig1.pdf
+#  |   |-- Fig2.pdf
+#  |   |-- Fig3.pdf
+#  |   |-- Fig4.pdf
+#  |   |-- Fig5.pdf
+#  |   |-- FigA1a.pdf
+#  |   |-- FigA1b.pdf
+#  |   |-- FigA1c.pdf
+#  |   `-- FigA1d.pdf
+#  `-- summary.log
 ```
 
-The filename for each figure can be provided to selectively generate plots. For example,
+The filename for `summary.log` or each figure can be provided to selectively generate results.
+For example,
+
+```sh
+make summary.log
+```
+
+to generate the plain-text log file, or
 
 ```sh
 make Fig1.pdf
 ```
 
-will reproduce Figure 1,
+to reproduce Figure 1,
 
 To remove all generated output and rebuild from scratch, run `make clean` first.
 See [`Makefile`](./Makefile) for all available build targets.
